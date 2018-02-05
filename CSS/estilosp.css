@@ -1,0 +1,367 @@
+*
+{
+	margin:0;
+}
+
+/*Aplicando color de fondo al cuerpo*/
+body{
+	background: #02010a;
+	color: black;
+	font-family: Dancing Script;
+}
+
+/*Aplicando propiedades a la cabecera que esta dentro del div de nombre contenido*/
+header
+{
+  background: #5b7989;
+  margin: 0 auto;
+	padding: 2% 2%;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+	animation: header_animacion 1s;
+}
+
+@keyframes header_animacion
+{
+	0%
+	{
+		margin-top: 150%;
+	}
+	60%
+	{
+		margin-top: -5%;
+	}
+	100%
+	{
+	margin-top: 0%;
+	}
+}
+
+/*Aplicando propiedades a los enlaces/link que se encuentra en el header*/
+ #Navcontenido a
+ {
+   color: white;
+ }
+
+img
+{
+  -webkit-box-shadow: 2px 2px 2px  #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+  box-shadow: 2px 2px 2px #02010a;
+  border: 2px solid black;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (min-width: 900px){
+
+	#Contenido
+	{
+    width: 900px;
+  	margin: 0 auto;
+	}
+
+  header
+  {
+  	height: 1.5em;
+    font-size: 32px;
+
+  }
+
+  #Navcontenido
+  {
+    float: right;
+  }
+
+  #Navcontenido a
+  {
+    font-size: 26px;
+  }
+
+    .ClsdivImg
+    {
+      display: flex;
+      flex-flow: row wrap;
+      background-color: #d5c75f;
+      width: 100%;
+      height: 400px;
+    }
+
+    .Clsartimagen
+    {
+      width: 33%;
+			padding-top: 2%;
+			text-align: center;
+    }
+
+    img
+    {
+      width: 80%;
+
+    }
+
+		#artimagen1
+			{
+			 order: 1;
+			}
+
+		#artimagen2
+		{
+		 order: 2;
+		}
+
+		#artimagen3
+			{
+			 order: 3;
+			}
+
+		#artimagen4
+		{
+		 order: 4;
+		}
+
+		#artimagen5
+		 {
+			order: 5;
+		 }
+
+		 #artimagen6
+		 {
+			order: 6;
+		 }
+
+		#imagen1
+		{
+		 filter: blur(10px);
+		}
+
+		#imagen3
+		{
+		 filter: sepia(90%);
+		}
+
+		#imagen2, #imagen4, #imagen6
+		{
+		 filter:grayscale(100%);
+		}
+
+    footer
+     {
+       border-radius: 0px 0px 10px 10px;
+       background: #C6d5c5;
+       font-size: 16px;
+       font-style: italic;
+       height: 200px;
+       padding: 0px 5px 5px 10px;
+       display: flex;
+       flex-direction: row;
+       text-align: left;
+     }
+
+     .Clsfot1
+     {
+       width: 28%;
+     }
+
+     .Clsfot2
+     {
+       width: 37%;
+     }
+
+     .Clsfot3
+     {
+       width: 18%;
+      }
+
+     .Clsfot4
+     {
+       width: 17%;
+     }
+
+     footer > article
+     {
+       padding: 15% 2% 2% 1%;
+     }
+
+     footer article p
+     {
+       text-align: justify;
+     }
+
+     #figimgfb
+     {
+       font-size: 16px;
+       padding-top: 2.5%;
+       padding-bottom: 2.5%;
+     }
+
+      #capfb
+      {
+        text-align: right;
+        display: inline;
+      }
+     #imgfb
+     {
+       width: 10%;
+       height: 10%;
+       border: 0;
+     }
+
+}
+
+@media screen and (max-width: 899px)
+{
+
+#Contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+  #Navcontenido
+  {
+    float:inherit;
+  }
+
+	header
+	{
+	width:100%;
+  font-size: 40px;
+  text-align: center;
+  height: 3.7em;
+  }
+
+  #Navcontenido a
+  {
+    font-size: 22px;
+    padding-top: -5%;
+   }
+
+	 .ClsdivImg
+	 {
+		 display: flex;
+		 flex-flow: column wrap;
+		 background-color: #d5c75f;
+		 width: 104%;
+		 height: 100%;
+		 padding-top: 8%;
+	 }
+
+	 .Clsartimagen
+	 {
+		 width: 100%;
+		 height:100%;
+		 text-align: center;
+	 }
+
+	 img
+	 {
+		 width: 80%;
+		 height: 80%;
+
+	 }
+
+	 #artimagen1
+		 {
+			order: 1;
+		 }
+
+ #artimagen2
+	 {
+		order: 2;
+	 }
+
+	 #artimagen3
+		 {
+			order: 3;
+		 }
+
+	 #artimagen4
+	 {
+		order: 4;
+	 }
+
+	 #artimagen5
+		{
+		 order: 5;
+		}
+
+		#artimagen6
+		{
+		 order: 6;
+		}
+
+	 #imagen1
+	{
+		filter: blur(10px);
+	}
+
+	#imagen3
+	{
+		filter: sepia(90%);
+	}
+
+	#imagen2, #imagen4, #imagen6
+	{
+		filter:grayscale(100%);
+	}
+
+
+   footer
+    {
+      border-radius: 0px 0px 10px 10px;
+      background: #C6d5c5;
+      font-size: 16px;
+      font-style: italic;
+      height: 100%;
+      width: 104%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 3%;
+    }
+
+    footer article
+    {
+      width: 95%;
+      height: 25%;
+      padding-top: 10%;
+      padding-left: 3%;
+    }
+
+    footer article h1
+    {
+      padding-top: 13%;
+    }
+
+    footer article p
+    {
+      text-align: justify;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+
+    #figimgfb
+    {
+      font-size: 16px;
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+    }
+
+     #capfb
+     {
+       text-align: right;
+       display: inline;
+     }
+    #imgfb
+    {
+      width: 3%;
+      height: 3%;
+      border: 0;
+    }
+
+
+}
